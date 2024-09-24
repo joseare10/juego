@@ -24,22 +24,22 @@ function isGameOver() {
 
 
 function playRound(playerSelection, computerSelection) {
-  let status = "You Lose!";
+  let status = "PERDISTE!!!!!";
   let winner = computerSelection;
   let looser = playerSelection;
-  let playerWin = (playerSelection == "rock" && computerSelection == "scissors") || (playerSelection == "paper" && computerSelection == "rock") || (playerSelection == "scissors" && computerSelection == "paper");
+  let playerWin = (playerSelection == "roca" && computerSelection == "tijera") || (playerSelection == "papel" && computerSelection == "roca") || (playerSelection == "tijera" && computerSelection == "papel");
   let tie = (playerSelection == computerSelection);
 
   if (playerWin) {
     [winner, looser] = [playerSelection, computerSelection]
-    status = "You Win!";
+    status = "GANASTEEEE!";
     userWins++;
   } else if (tie) {
-    status = "It's a tie :/"
+    status = "EMPATE!"
   } else computerWins++;
 
-  let info = `${winner} beats ${looser}`;
-  if (tie) info = 'cri cri cri...';
+  let info = `${winner} gana ${looser}`;
+  if (tie) info = '...';
   refreshInfo(status, info);
 }
 
@@ -57,14 +57,14 @@ function getComputerChoice() {
     case 0:
       computerSelect = '✊';
       gComputerSelect.textContent = computerSelect;
-      return "rock";
+      return "roca";
     case 1:
       computerSelect = '✋';
       gComputerSelect.textContent = computerSelect;
-      return "paper";
+      return "papel";
     case 2:
       computerSelect = '✌';
       gComputerSelect.textContent = computerSelect;
-      return "scissors";
+      return "tijera";
   }
 }
