@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.header {
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 25px rgb(255, 255, 255) double;
+    padding: 20px 0px;
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+}
+
+.content {
+    
+    text-align: center;
+    height: 100%;
+
+}
+
+.status {
+
+    display: flex;
+    justify-content: center;
+
+    background-color: white;
+    color: black;
+}
+
+.status p {
+    border: 5px rgb(0, 0, 0) dotted;
+    font-size: 40px;
+
+}
+
+.primero {
+    border-left: rgb(0, 0, 0) 15px dotted;
+    padding: 15px;
+    width: 40%;
+    order: 2;
+}
+
+.segundo {
+    border-right: rgb(0, 0, 0) 15px dotted;
+    padding: 15px;
+    width: 40%;
+    order: 1;
+}
+
+.uno {}
+
+.dos {}
+
+.battle {
+
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+}
+
+.battle p {
+    border: 5px rgb(255, 255, 255) dotted;
+    padding: 15px;
+}
+
+.vs {
+
+    font-size: 80px;
+    width: 10%;
+    background-color: darkorange;
+    height: 100%;
+}
+
+#user {
+
+    width: 35%;
+    background-color: rgb(57, 57, 196);
+}
+
+#computer {
+
+    width: 35%;
+    background-color: rgb(182, 36, 36);
+}
+
+#Piedra {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 20%;
+    height: 300px;
+    font-size: 70px;
+    border-radius: 50%;
+    transition: background 0.5s linear;
+}
+#Piedra:hover{
+    background: goldenrod;
+}
+
+#Papel {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 20%;
+    height: 300px;
+    font-size: 70px;
+    border-radius: 50%;
+    transition: background 0.5s linear;
+}
+#Papel:hover{
+    background: goldenrod;
+}
+
+#Tijera {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 20%;
+    height: 300px;
+    font-size: 70px;
+    border-radius: 50%;
+    transition: background 0.5s linear;
+}
+#Tijera:hover{
+    background: goldenrod;
+}
+
+.ult{
+    background-color: white;
+    padding: 20px;
+}

@@ -27,7 +27,7 @@ function playRound(playerSelection, computerSelection) {
   let status = "PERDISTE!!!!!";
   let winner = computerSelection;
   let looser = playerSelection;
-  let playerWin = (playerSelection == "roca" && computerSelection == "tijera") || (playerSelection == "papel" && computerSelection == "roca") || (playerSelection == "tijera" && computerSelection == "papel");
+  let playerWin = (playerSelection == "Piedra" && computerSelection == "Tijera") || (playerSelection == "Papel" && computerSelection == "Piedra") || (playerSelection == "Tijera" && computerSelection == "Papel");
   let tie = (playerSelection == computerSelection);
 
   if (playerWin) {
@@ -57,14 +57,14 @@ function getComputerChoice() {
     case 0:
       computerSelect = '✊';
       gComputerSelect.textContent = computerSelect;
-      return "roca";
+      return "Piedra";
     case 1:
       computerSelect = '✋';
       gComputerSelect.textContent = computerSelect;
-      return "papel";
+      return "Papel";
     case 2:
       computerSelect = '✌';
       gComputerSelect.textContent = computerSelect;
-      return "tijera";
+      return "Tijera";
   }
 }

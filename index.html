@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rock Paper Scissors</title>
+    <title>Piedra, papel o tijera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Nerko+One&family=Protest+Guerrilla&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="stylesheet" href="juego.css" />
   </head>
   <body>
-    <div class='header'>
-      <p>PIEDRA PAPEL TIJERA</p>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cinzel:wght@400..900&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Nerko+One&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <div class="header">
+      <p>PIEDRA, PAPEL o TIJERA</p>
     </div>
     <div class="content">
       <div class="status">
+        <div class="primero">
+        <div class="uno">
         <p id='who-wins'>Selecciona uno para empezar</p>
         <p id='info'>El primero en llegar a 5 gana</p>
+        </div>
+        </div>
+        <div class="segundo">
+        <div class="dos">
         <p id='who-wins'>Selecciona uno</p>
-        <p id='info'>al mejor de 5</p>
+        <p id="w">" Piensalo bien :/ " </p>
+        </div>
+        </div>
       </div>
       <div class="battle">
         <div class="card" id='user'>
@@ -23,16 +33,21 @@
           <p class='wins'>Usuario: 0</p>
           
         </div>
+        <div class="vs">
+        <p>VS</p>
+        </div>
         <div class="card" id='computer'>
           <p class='item'>?</p>
           <p class='wins'>Computadora: 0</p>
          
         </div>
       </div>
+      <div class="ult">
       <div id="selection">
-        <button id='roca'>✊</button>
-        <button id='papel'>✋</button>
-        <button id='tijera'>✌</button>
+        <button id='Piedra'>✊</button>
+        <button id='Papel'>✋</button>
+        <button id='Tijera'>✌</button>
+      </div>
       </div>
     </div>
   </body>
